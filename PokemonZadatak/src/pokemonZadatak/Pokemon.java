@@ -32,7 +32,29 @@ public class Pokemon {
 				+brojPokemona +" Pokemona.";
 	}
 	
-
+	@Override
+	public boolean equals(Object obj) {
+		
+		if(obj instanceof Pokemon) {
+			Pokemon temp = (Pokemon) obj;
+			
+			if(temp.imePokemona == this.imePokemona && temp.tipPokemona == this.tipPokemona
+					&& temp.redniBroj == this.redniBroj) {
+				
+				System.out.println("Poredjenje sa samim sobom");
+				
+			}else if(temp.imePokemona == this.imePokemona && temp.tipPokemona == this.tipPokemona) {
+				
+				System.out.println("Pokemoni su isti");
+				
+			}else if(temp.tipPokemona == this.tipPokemona) {
+				
+				System.out.println("Pokemoni su srodni");
+				
+			}
+		}
+		return false;
+	}
 	
 	public static int getBrojPokemona() {
 		return brojPokemona;
