@@ -51,6 +51,8 @@ public class Pokemon {
 				
 				System.out.println("Pokemoni su srodni");
 				
+			}else {
+				System.out.println("Pokemoni su razliciti");
 			}
 		}
 		return false;
