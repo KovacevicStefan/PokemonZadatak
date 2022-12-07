@@ -7,7 +7,7 @@ public class Test {
 		Pokemon prvi = new Pokemon("Charizard", "vatreni");
 		System.out.println(prvi.toString());
 		
-		Pokemon drugi = new Pokemon("Squirtle", "vatreni");
+		Pokemon drugi = new Pokemon("Squirtle", "vodeni");
 		System.out.println(drugi.toString());
 		
 		Pokemon treci = new Pokemon("Pikachu", "elektricni");
